@@ -250,6 +250,35 @@
       "uuid": "6181df09-5737-4ce3-b030-d9c5ca43b231",
       "type": "http",
       "responseMode": null
+    },
+    {
+      "uuid": "030593b8-6bd2-4cdf-9dca-24440150c64b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "martin",
+      "responses": [
+        {
+          "uuid": "f8a78d57-59d3-4c7c-a544-cc69a2af10ea",
+          "body": "{\"jen_si\":\"pockej\"}",
+          "latency": 0,
+          "statusCode": 100,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -276,6 +305,10 @@
     {
       "type": "route",
       "uuid": "6181df09-5737-4ce3-b030-d9c5ca43b231"
+    },
+    {
+      "type": "route",
+      "uuid": "030593b8-6bd2-4cdf-9dca-24440150c64b"
     }
   ],
   "proxyMode": true,
