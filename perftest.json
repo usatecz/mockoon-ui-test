@@ -1,0 +1,202 @@
+{
+  "uuid": "ff4311af-1202-40f8-899c-8e8bd24ee524",
+  "lastMigration": 32,
+  "name": "Perftest",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "4c24510f-cd85-43e6-b369-65bf970bb201",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "martin",
+      "responses": [
+        {
+          "uuid": "dfaa2a2a-559f-452f-a4fe-b00c998ae52c",
+          "body": "{\"coyi\":true}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "70627d2d-0276-43f6-8ea3-7ef1ef451ece",
+          "body": "{\"asd\":\"asd\"}",
+          "latency": 0,
+          "statusCode": 418,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM"
+    },
+    {
+      "uuid": "e4719e05-dc3a-45b1-859d-bee6c1d4f562",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "martin/:userid",
+      "responses": [
+        {
+          "uuid": "9b3d0ec9-5764-4dcc-a930-2648995d24cd",
+          "body": "{\"coyi\":true}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "user",
+              "value": "Martin",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "9c48a143-d986-48ec-b24f-2608d68bcbcc",
+          "body": "{\"asd\":\"asd\"}",
+          "latency": 0,
+          "statusCode": 418,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "userid",
+              "value": "1",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b3787101-ae7a-4c59-9660-c873d15a4828",
+          "body": "{\"padl_siebel\":\"neco_si_prej\"}",
+          "latency": 0,
+          "statusCode": 503,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "userid",
+              "value": "2",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4c24510f-cd85-43e6-b369-65bf970bb201"
+    },
+    {
+      "type": "route",
+      "uuid": "e4719e05-dc3a-45b1-859d-bee6c1d4f562"
+    }
+  ],
+  "proxyMode": true,
+  "proxyHost": "http://www.centrum.cz",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
