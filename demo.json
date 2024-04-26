@@ -260,7 +260,7 @@
       "responses": [
         {
           "uuid": "f8a78d57-59d3-4c7c-a544-cc69a2af10ea",
-          "body": "{\"jen_si\":\"pockej\"}",
+          "body": "{\"jen_si\":\"pockej_zajici\"}",
           "latency": 0,
           "statusCode": 100,
           "label": "",
