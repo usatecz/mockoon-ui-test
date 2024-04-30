@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "cf705fc6-627c-4a72-9073-f29f6bc3faae",
-          "body": "{\"ukazka\":\"ukazka\", \"updated\":\"yes\",\"ahoj\":\"ahoj\"}",
+          "body": "{\"coyi\":\"vitezstvi\",ukazka\":\"ukazka\", \"updated\":\"yes\",\"ahoj\":\"ahoj\"}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
