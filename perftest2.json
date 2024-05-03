@@ -44,7 +44,7 @@
         },
         {
           "uuid": "05e92cac-c881-43e1-975b-667a8932b156",
-          "body": "{\"ukazka\":\"ukazka\", \"asd\":\"asd\",\"ahoj\":\"ahoj\",\"odpoved2\":\"odpoved2\"}",
+          "body": "{\"ukazka\":\"rydl\"}",
           "latency": 0,
           "statusCode": 418,
           "label": "",
@@ -53,7 +53,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "/user",
+              "value": "MArtin",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
