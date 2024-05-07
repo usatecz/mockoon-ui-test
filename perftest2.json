@@ -44,7 +44,7 @@
         },
         {
           "uuid": "05e92cac-c881-43e1-975b-667a8932b156",
-          "body": "{\"ukazka\":\"rydl\"}",
+          "body": "{\"ukazka\":\"mikita\"}",
           "latency": 0,
           "statusCode": 418,
           "label": "",
