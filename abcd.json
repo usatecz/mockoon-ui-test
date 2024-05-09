@@ -78,7 +78,7 @@
           "body": "{\"status\":\"ok\"}",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "_MH",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -89,6 +89,33 @@
               "target": "body",
               "modifier": "/partyId",
               "value": "1245",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ac6f38cb-8ee4-4e03-85b0-31b9deb370a6",
+          "body": "{\"type\":\"moje_response\"}",
+          "latency": 0,
+          "statusCode": 202,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
               "invert": false,
               "operator": "equals"
             }
